@@ -7,6 +7,7 @@ import openfl.geom.Matrix;
 import openfl.geom.Point;
 import openfl.geom.Rectangle;
 import openfl.text.TextField;
+import openfl.display3D.Context3DTextureFormat;
 
 import fairygui.text.BMGlyph;
 import fairygui.text.BitmapFont;
@@ -15,7 +16,7 @@ import starling.core.RenderSupport;
 import starling.display.QuadBatch;
 import starling.textures.Texture;
 import starling.textures.TextureSmoothing;
-import starling.utils.GetNextPowerOfTwo;
+import starling.utils.StarlingUtils;
 
 class TextCanvas extends FixedSizeObject
 {
@@ -29,9 +30,9 @@ class TextCanvas extends FixedSizeObject
     private static var sHelperQuad : QuadExt;
     private static var sHelperRect : Rectangle = new Rectangle();
     private static var sHelperMatrix : Matrix = new Matrix();
-//    private static var sDefaultTextureFormat : String =
-//        Lambda.has(Context3DTextureFormat, "BGRA_PACKED") ? "bgraPacked4444" : "bgra";
-    private static var sDefaultTextureFormat : String = "bgra";
+    private static var sDefaultTextureFormat : String =
+        Lambda.has(Context3DTextureFormat, "BGRA_PACKED") ? "bgraPacked4444" : "bgra";
+//    private static var sDefaultTextureFormat : String = "bgra";
     
     public static var textureMemoryTrack : Int = 0;
     
@@ -68,10 +69,10 @@ class TextCanvas extends FixedSizeObject
         {
             var bw : Int;
             var bh : Int;
-            bw = getNextPowerOfTwo(nw);
+            bw = StarlingUtils.getNextPowerOfTwo(nw);
             if (bw > 2048) 
                 bw = 2048;
-            bh = getNextPowerOfTwo(textHeight);
+            bh = StarlingUtils.getNextPowerOfTwo(textHeight);
             if (bh > 2048) 
                 bh = 2048;
             var bmd : BitmapData = new BitmapData(bw, bh, true, 0);

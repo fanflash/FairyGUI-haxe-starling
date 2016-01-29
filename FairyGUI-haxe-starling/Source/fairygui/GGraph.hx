@@ -1,5 +1,6 @@
 package fairygui;
 
+import starling.utils.StarlingUtils;
 import fairygui.GObject;
 import openfl.errors.Error;
 
@@ -10,7 +11,7 @@ import fairygui.utils.ToolSet;
 
 import starling.display.DisplayObject;
 import starling.display.Sprite;
-import starling.utils.Deg2rad;
+import starling.utils.StarlingUtils;
 
 class GGraph extends GObject
 {
@@ -21,8 +22,6 @@ class GGraph extends GObject
     public function new()
     {
         super();
-        
-        
     }
     
     public function drawRect(lineSize : Int, lineColor : Int, lineAlpha : Float,
@@ -95,7 +94,7 @@ class GGraph extends GObject
                 _parent.childStateChanged(this);
             handleXYChanged();
             displayObject.alpha = this.alpha;
-            displayObject.rotation = deg2rad(this.normalizeRotation);
+            displayObject.rotation = StarlingUtils.deg2rad(this.normalizeRotation);
             displayObject.visible = this.visible;
             cast((displayObject), Sprite).touchable = this.touchable;
         }
@@ -139,7 +138,7 @@ class GGraph extends GObject
     {
         var type : String = xml.att.type;
         if (type != null && type != "empty") 
-            this.shape  //create shape now  ;
+            this.shape;  //create shape now  ;
         
         super.setup_beforeAdd(xml);
         

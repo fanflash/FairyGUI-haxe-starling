@@ -1,6 +1,5 @@
 package fairygui;
 
-import fairygui.UserClass;
 import fairygui.ZipUIPackageReader;
 
 import openfl.display.Bitmap;
@@ -97,11 +96,15 @@ class UIPackage
     {
         var pkg : UIPackage = Reflect.field(_packageInstById, packageId);
         pkg.dispose();
-        ;
-        if (pkg._customId != null) 
-            ;
-        ;
+//        delete _packageInstById[pkg.id];
+        Reflect.deleteField(_packageInstById, pkg.id);
+        if(pkg._customId!=null)
+            Reflect.deleteField(_packageInstById, pkg._customId);
+//            delete _packageInstById[pkg._customId];
+//        delete _packageInstByName[pkg.name];
+          Reflect.deleteField(_packageInstById, pkg.name);
     }
+
     
     public static function createObject(pkgName : String, resName : String, userClass : Class<Dynamic> = null) : GObject
     {
@@ -351,7 +354,8 @@ class UIPackage
             }
             else if (pi.bitmapFont != null) 
             {
-                ;
+                Reflect.deleteField(_bitmapFonts, pi.bitmapFont.id);
+//                delete _bitmapFonts[pi.bitmapFont.id];
             }
         }
     }
@@ -374,7 +378,7 @@ class UIPackage
     private function set_customId(value : String) : String
     {
         if (_customId != null) 
-            ;
+            Reflect.deleteField(_packageInstById, _customId);
         _customId = value;
         if (_customId != null) 
             Reflect.setField(_packageInstById, _customId, this);
