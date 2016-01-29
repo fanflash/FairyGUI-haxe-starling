@@ -26,7 +26,7 @@ class GTimers
     
     public static var inst : GTimers = new GTimers();
     
-    private static var FPS24 : Int = Int(1000 / 24);
+    private static var FPS24 : Int = Std.int(1000 / 24);
     
     public function new()
     {

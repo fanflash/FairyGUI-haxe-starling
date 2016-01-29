@@ -104,3 +104,6 @@ FairyGUI-haxe-starling/out/production/FairyGUI-haxe-starling/fairygui/utils/Tool
 FairyGUI-haxe-starling/out/production/FairyGUI-haxe-starling/fairygui/utils/UBBParser.hx
 FairyGUI-haxe-starling/out/production/FairyGUI-haxe-starling/fairygui/utils/ZipReader.hx
 FairyGUI-haxe-starling/out/production/FairyGUI-haxe-starling/motion/EaseLookup.hx
+FairyGUI-haxe-starling/out/production/FairyGUI-haxe-starling/fairygui/GearLook.hx
+FairyGUI-haxe-starling/out/production/FairyGUI-haxe-starling/fairygui/GearSize.hx
+FairyGUI-haxe-starling/out/production/FairyGUI-haxe-starling/fairygui/GearXY.hx

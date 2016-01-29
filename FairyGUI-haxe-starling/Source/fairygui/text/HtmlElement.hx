@@ -1,7 +1,7 @@
 package fairygui.text;
 
 
-import flash.text.TextFormat;
+import openfl.text.TextFormat;
 
 class HtmlElement
 {

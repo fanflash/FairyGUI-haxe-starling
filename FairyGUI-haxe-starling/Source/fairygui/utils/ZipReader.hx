@@ -1,11 +1,7 @@
 package fairygui.utils;
 
-
 import openfl.utils.ByteArray;
 import openfl.utils.Endian;
-
-
-
 
 class ZipReader
 {
@@ -77,8 +73,6 @@ class ZipReader
         return ba;
     }
 }
-
-
 
 class ZipEntry
 {

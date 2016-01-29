@@ -5,6 +5,7 @@ import fairygui.PageOptionSet;
 
 import motion.easing.IEasing;
 import motion.easing.Quad;
+import motion.EaseLookup;
 
 class GearBase
 {
@@ -154,7 +155,8 @@ class GearBase
         
         
     }
-    
+
+    @:allow(fairygui)
     private function init() : Void
     {
         
