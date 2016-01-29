@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="FairyGUIHaxeStarling" package="com.sample.fairyguihaxestarling" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="FairyGUIHaxeStarling" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="starling" />
+	<haxelib name="actuate" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>

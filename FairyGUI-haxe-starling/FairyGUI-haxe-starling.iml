@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="HAXE_MODULE" version="4">
+  <component name="HaxeModuleSettingsStorage">
+    <option name="buildConfig" value="3" />
+    <option name="excludeFromCompilation" value="true" />
+    <option name="flexSdkName" value="Flash 4.14.0" />
+    <option name="outputFolder" value="$MODULE_DIR$/out/production/FairyGUI-haxe-starling" />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Source" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="actuate" level="application" />
+    <orderEntry type="library" name="haxe" level="application" />
+    <orderEntry type="library" name="openfl" level="application" />
+    <orderEntry type="library" name="starling" level="application" />
+  </component>
+</module>

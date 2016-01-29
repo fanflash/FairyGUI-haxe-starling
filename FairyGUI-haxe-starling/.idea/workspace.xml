@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16c21fb3-1cd8-4a36-87e8-d79cdd9b405e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/AlignType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/AutoSizeType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/BMGlyph.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/BitmapFont.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/ButtonMode.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/utils/CharSize.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/Controller.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/DragDropManager.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/event/DragEvent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/event/DropEvent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/motion/EaseLookup.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FairyGUI-haxe-starling.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FairyGUIHaxeStarling.hxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/FillType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/FixedSizeObject.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/FlipType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/event/FocusChangeEvent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/Frame.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GButton.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GComboBox.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GComponent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GGraph.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GGroup.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GImage.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GLabel.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GList.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GLoader.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GMovieClip.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GObject.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GObjectPool.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GProgressBar.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GRichTextField.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GRoot.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GScrollBar.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GSlider.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GSwfObject.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GTextField.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GTextInput.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/utils/GTimers.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/event/GTouchEvent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GearAnimation.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GearBase.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GearColor.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/GearDisplay.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/HtmlElement.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/HtmlNode.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/HtmlText.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/IAnimationGear.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/IColorGear.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/IRichTextObjectFactory.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/tree/ITreeListener.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/IUIPackageReader.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/IUISource.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/ImageExt.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/event/ItemEvent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/LinkButton.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/ListLayoutType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/ListSelectionMode.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/Main.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/Margin.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/MovieClip.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/OverflowType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/PackageItem.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/PackageItemType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/PageOption.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/PageOptionSet.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/PlayState.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/PopupMenu.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/ProgressTitleType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/QuadExt.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/RelationItem.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/RelationType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/Relations.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/RichTextField.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/text/RichTextObjectFactory.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/ScrollBarDisplayType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/ScrollType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/Shape.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/utils/SimpleDispatcher.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/event/StateChangeEvent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/TextCanvas.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/event/TextEvent.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/utils/ToolSet.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/Transition.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/tree/TreeNode.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/tree/TreeView.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/utils/UBBParser.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/UIConfig.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/UIDisplayObject.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/UIImage.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/UIMovieClip.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/UIObjectFactory.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/UIPackage.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/UIRichTextField.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/UIShape.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/UISprite.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/display/UITextField.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/VertAlignType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/Window.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/utils/ZipReader.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/fairygui/ZipUIPackageReader.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project.xml" />
+    </list>
+    <ignored path="FairyGUI-haxe-starling.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FairyGUI-haxe-starling" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="TextCanvas.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/TextCanvas.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIDisplayObject.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UIDisplayObject.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuadExt.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/QuadExt.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayState.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/PlayState.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieClip.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/MovieClip.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageExt.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/ImageExt.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Frame.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/Frame.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixedSizeObject.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/FixedSizeObject.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIRichTextField.hx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UIRichTextField.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6084656">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shape.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/fairygui/display/Shape.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HaxeClass" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Source/fairygui/text/RichTextField.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/text/BMGlyph.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/text/HtmlText.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/FixedSizeObject.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/Frame.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/ImageExt.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/MovieClip.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/QuadExt.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/Shape.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/tree/TreeNode.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/utils/CharSize.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/Controller.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/DragDropManager.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/utils/ZipReader.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GGraph.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GMovieClip.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GRoot.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GScrollBar.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GSlider.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GTextField.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GTextInput.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/Relations.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/UIPackage.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/Window.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/ZipUIPackageReader.hx" />
+        <option value="$PROJECT_DIR$/Source/Main.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GObject.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GLoader.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GComponent.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GButton.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GObjectPool.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/PackageItem.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/PopupMenu.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/IUISource.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/IUIPackageReader.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/IColorGear.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/IAnimationGear.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GearBase.hx" />
+        <option value="$PROJECT_DIR$/Source/motion/EaseLookup.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/Transition.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/utils/GTimers.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/utils/ToolSet.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/GList.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/TextCanvas.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/UIDisplayObject.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/UIImage.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/UIMovieClip.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/UIShape.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/UISprite.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/UITextField.hx" />
+        <option value="$PROJECT_DIR$/Source/fairygui/display/UIRichTextField.hx" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="118" />
+    <option name="y" value="23" />
+    <option name="width" value="1400" />
+    <option name="height" value="956" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FairyGUI-haxe-starling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FairyGUI-haxe-starling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actuate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1,8,6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FairyGUI-haxe-starling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actuate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1,8,6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="motion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FairyGUI-haxe-starling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actuate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1,8,6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="motion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Actuate.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FairyGUI-haxe-starling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FairyGUI-haxe-starling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="RunManager" selected="Haxe Application.ui-text">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="HaxeApplicationRunConfiguration" factoryName="Haxe Application" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="" />
+      <option name="customDebugPort" value="6972" />
+      <option name="customExecutable" value="false" />
+      <option name="customExecutablePath" value="" />
+      <option name="customFileToLaunch" value="false" />
+      <option name="customFileToLaunchPath" value="" />
+      <option name="customRemoteDebugging" value="false" />
+      <module name="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="ui-text" type="HaxeApplicationRunConfiguration" factoryName="Haxe Application" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="FairyGUI-haxe-starling" />
+      <option name="customDebugPort" value="6972" />
+      <option name="customExecutable" value="false" />
+      <option name="customExecutablePath" value="" />
+      <option name="customFileToLaunch" value="false" />
+      <option name="customFileToLaunchPath" value="" />
+      <option name="customRemoteDebugging" value="false" />
+      <module name="FairyGUI-haxe-starling" />
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Haxe Application.ui-text" />
+    </list>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16c21fb3-1cd8-4a36-87e8-d79cdd9b405e" name="Default" comment="" />
+      <created>1454042457615</created>
+      <option name="number" value="Default" />
+      <updated>1454042457615</updated>
+      <workItem from="1454042460075" duration="6149000" />
+      <workItem from="1454050045261" duration="958000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7107000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="118" y="23" width="1400" height="956" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/UIConfig.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/UIObjectFactory.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/UIPackage.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="568" column="65" selection-start-line="568" selection-start-column="65" selection-end-line="568" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/VertAlignType.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/Window.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GComponent.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GLoader.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="513" column="29" selection-start-line="513" selection-start-column="29" selection-end-line="513" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GGroup.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GObject.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1177" column="4" selection-start-line="1177" selection-start-column="4" selection-end-line="1177" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Export/flash/haxe/ApplicationMain.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GButton.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="310" column="51" selection-start-line="310" selection-start-column="51" selection-end-line="310" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/PopupMenu.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9080326">
+          <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/PackageItem.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0698487">
+          <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GObjectPool.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/IUISource.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/tree/ITreeListener.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/ZipUIPackageReader.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20954598">
+          <caret line="12" column="58" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/IColorGear.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12223516">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/IUIPackageReader.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15715949">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/openfl/actuate/1,8,6/motion/easing/Quad.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22700815">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/IAnimationGear.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15715949">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/text/IRichTextObjectFactory.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GearBase.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/openfl/actuate/1,8,6/motion/actuators/GenericActuator.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27939466">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/openfl/actuate/1,8,6/motion/actuators/IGenericActuator.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10477299">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/openfl/actuate/1,8,6/motion/actuators/SimpleActuator.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24563445">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/openfl/actuate/1,8,6/motion/easing/Linear.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22700815">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/motion/EaseLookup.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/Type.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3329453">
+          <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/openfl/actuate/1,8,6/motion/Actuate.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55995345">
+          <caret line="307" column="18" selection-start-line="307" selection-start-column="18" selection-end-line="307" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/Transition.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Main.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/utils/GTimers.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/utils/ToolSet.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="147" selection-start-line="123" selection-start-column="147" selection-end-line="123" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/GList.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="491" column="42" selection-start-line="491" selection-start-column="42" selection-end-line="491" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/Lambda.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UIImage.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UIMovieClip.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UIShape.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UISprite.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UITextField.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UIDisplayObject.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/TextCanvas.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/Shape.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/QuadExt.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/PlayState.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/MovieClip.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/ImageExt.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/Frame.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/FixedSizeObject.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/fairygui/display/UIRichTextField.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6084656">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>actuate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Flash 4.14.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FairyGUI-haxe-starling</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Haxe 3.2.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
