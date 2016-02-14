@@ -892,7 +892,7 @@ class GList extends GComponent
         setBounds(0, 0, cw, ch);
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         super.setup_beforeAdd(xml);
         
@@ -940,13 +940,13 @@ class GList extends GComponent
         
         str = xml.att.lineGap;
         if (str != null) 
-            _lineGap = parseInt(str)
+            _lineGap = Std.parseInt(str)
         else 
         _lineGap = 0;
         
         str = xml.att.colGap;
         if (str != null) 
-            _columnGap = parseInt(str)
+            _columnGap = Std.parseInt(str)
         else 
         _columnGap = 0;
         

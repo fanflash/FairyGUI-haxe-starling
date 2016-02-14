@@ -8,6 +8,8 @@ import fairygui.display.UISprite;
 
 import starling.display.DisplayObject;
 
+import haxe.xml.Fast;
+
 class GSwfObject extends GObject implements IAnimationGear
 {
     public var playing(get, set) : Bool;
@@ -100,7 +102,7 @@ class GSwfObject extends GObject implements IAnimationGear
         setSize(_sourceWidth, _sourceHeight);
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         super.setup_beforeAdd(xml);
         
@@ -108,11 +110,11 @@ class GSwfObject extends GObject implements IAnimationGear
         _playing = str != "false";
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
-        var cxml : FastXML = xml.nodes.gearAni.get(0);
+        var cxml : Fast = xml.nodes.gearAni.get(0);
         if (cxml != null) 
             _gearAnimation.setup(cxml);
     }

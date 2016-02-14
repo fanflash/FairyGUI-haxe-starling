@@ -17,5 +17,6 @@
     <orderEntry type="library" name="haxe" level="application" />
     <orderEntry type="library" name="openfl" level="application" />
     <orderEntry type="library" name="starling" level="application" />
+    <orderEntry type="library" name="lime" level="application" />
   </component>
 </module>

@@ -1,6 +1,6 @@
 package fairygui;
 
-import fairygui.ZipUIPackageReader;
+import haxe.xml.Fast;
 
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
@@ -10,20 +10,17 @@ import openfl.geom.Point;
 import openfl.geom.Rectangle;
 import openfl.media.Sound;
 import openfl.utils.ByteArray;
-
+import openfl.display.Loader;
 
 import fairygui.display.Frame;
 import fairygui.text.BMGlyph;
 import fairygui.text.BitmapFont;
 import fairygui.utils.GTimers;
 import fairygui.utils.ToolSet;
+import fairygui.PackageItem;
+import fairygui.ZipUIPackageReader;
 
 import starling.textures.Texture;
-
-
-import openfl.display.Loader;
-
-import fairygui.PackageItem;
 
 
 class UIPackage
@@ -155,7 +152,7 @@ class UIPackage
         return Reflect.field(_bitmapFonts, url);
     }
     
-    public static function setStringsSource(source : FastXML) : Void
+    public static function setStringsSource(source : Fast) : Void
     {
         _stringsSource = { };
         var list : FastXMLList = source.node.string.innerData;
@@ -220,7 +217,7 @@ class UIPackage
             
             var sprite : AtlasSprite = new AtlasSprite();
             var itemId : String = arr2[0];
-            var binIndex : Int = parseInt(arr2[1]);
+            var binIndex : Int = Std.parseInt(arr2[1]);
             if (binIndex >= 0) 
                 sprite.atlas = "atlas" + binIndex
             else 
@@ -231,20 +228,21 @@ class UIPackage
                 else 
                 sprite.atlas = "atlas_" + itemId.substr(0, pos);
             }
-            sprite.rect.x = parseInt(arr2[2]);
-            sprite.rect.y = parseInt(arr2[3]);
-            sprite.rect.width = parseInt(arr2[4]);
-            sprite.rect.height = parseInt(arr2[5]);
+            sprite.rect.x = Std.parseInt(arr2[2]);
+            sprite.rect.y = Std.parseInt(arr2[3]);
+            sprite.rect.width = Std.parseInt(arr2[4]);
+            sprite.rect.height = Std.parseInt(arr2[5]);
             sprite.rotated = arr2[6] == "1";
             Reflect.setField(_sprites, itemId, sprite);
         }
         
         str = _reader.readDescFile("package.xml");
         
-        var ignoreWhitespace : Bool = FastXML.ignoreWhitespace;
-        FastXML.ignoreWhitespace = true;
-        var xml : FastXML = new FastXML(str);
-        FastXML.ignoreWhitespace = ignoreWhitespace;
+//        var ignoreWhitespace : Bool = FastXML.ignoreWhitespace;
+//        FastXML.ignoreWhitespace = true;
+//        var xml : FastXML = new FastXML(str);
+//        FastXML.ignoreWhitespace = ignoreWhitespace;
+        var xml : Fast = new Fast(Xml.parse(str).firstElement());
         
         _id = xml.att.id;
         _name = xml.att.name;
@@ -254,7 +252,7 @@ class UIPackage
         _itemsById = { };
         _itemsByName = { };
         var pi : PackageItem;
-        var cxml : FastXML;
+        var cxml : Fast;
         
         for (cxml in resources)
         {
@@ -427,12 +425,14 @@ class UIPackage
         return Reflect.field(_itemsByName, resName);
     }
     
-    private function getXMLDesc(file : String) : FastXML
+    private function getXMLDesc(file : String) : Fast
     {
-        var ignoreWhitespace : Bool = FastXML.ignoreWhitespace;
-        FastXML.ignoreWhitespace = true;
-        var ret : FastXML = new FastXML(_reader.readDescFile(file));
-        FastXML.ignoreWhitespace = ignoreWhitespace;
+//        var ignoreWhitespace : Bool = FastXML.ignoreWhitespace;
+//        FastXML.ignoreWhitespace = true;
+//        var ret : FastXML = new FastXML(_reader.readDescFile(file));
+//        FastXML.ignoreWhitespace = ignoreWhitespace;
+        var str:String = _reader.readDescFile(file);
+        var ret : Fast = new Fast(Xml.parse(str).firstElement());
         return ret;
     }
     
@@ -441,26 +441,27 @@ class UIPackage
         return _reader.readResFile(item.file);
     }
     
-    public function getComponentData(item : PackageItem) : FastXML
+    public function getComponentData(item : PackageItem) : Fast
     {
         if (!item.componentData) 
         {
-            var xml : FastXML = getXMLDesc(item.id + ".xml");
+//            var xml:Xml = Xml.parse(getXMLDesc(item.id + ".xml"));
+            var fast:Fast = getXMLDesc(item.id + ".xml");
             
             if (_stringsSource != null) 
             {
                 var col : Dynamic = _stringsSource[this.id + item.id];
                 if (col != null) 
-                    translateComponent(xml, col);
+                    translateComponent(fast, col);
             }
             
-            item.componentData = xml;
+            item.componentData = fast;
         }
         
         return item.componentData;
     }
     
-    private function translateComponent(xml : FastXML, strings : Dynamic) : Void
+    private function translateComponent(xml : Fast, strings : Dynamic) : Void
     {
         var displayList : Dynamic = xml.node.displayList.innerData.node.elements.innerData();
         var value : Dynamic;
@@ -496,7 +497,7 @@ class UIPackage
             }
             else if (ename == "component") 
             {
-                var dxml : FastXML = cxml.Button[0];
+                var dxml : Fast = cxml.Button[0];
                 if (dxml != null) 
                 {
                     value = Reflect.field(strings, elementId);
@@ -758,7 +759,7 @@ class UIPackage
     
     private function loadMovieClip(item : PackageItem) : Void
     {
-        var xml : FastXML = getXMLDesc(item.id + ".xml");
+        var xml : Fast = getXMLDesc(item.id + ".xml");
         item.pivot = new Point();
         var str : String = xml.att.pivot;
         if (str != null) 
@@ -770,7 +771,7 @@ class UIPackage
         
         str = xml.att.interval;
         if (str != null) 
-            item.interval = parseInt(str);
+            item.interval = Std.parseInt(str);
         str = xml.att.swing;
         if (str != null) 
             item.swing = str == "true";
@@ -780,12 +781,12 @@ class UIPackage
         
         var atlasItem : PackageItem;
         
-        var frameCount : Int = parseInt(xml.att.frameCount);
+        var frameCount : Int = Std.parseInt(xml.att.frameCount);
         item.frames = new Array<Frame>();
         var frameNodes : FastXMLList = xml.node.frames.innerData.node.elements.innerData();
         for (i in 0...frameCount){
             var frame : Frame = new Frame();
-            var frameNode : FastXML = frameNodes.get(i);
+            var frameNode : Fast = frameNodes.get(i);
             str = frameNode.att.rect;
             arr = str.split(sep0);
             frame.rect = new Rectangle(parseInt(arr[0]), parseInt(arr[1]), parseInt(arr[2]), parseInt(arr[3]));

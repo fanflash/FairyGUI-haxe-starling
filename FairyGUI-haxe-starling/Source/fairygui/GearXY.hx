@@ -2,7 +2,7 @@ package fairygui;
 
 import com.greensock.TweenLite;
 
-import flash.geom.Point;	
+import openfl.geom.Point;
 
 class GearXY extends GearBase
 {
@@ -15,7 +15,7 @@ class GearXY extends GearBase
 	{
 		super(owner);
 	}
-	
+
 	override private function init():Void
 	{
 		_default=new Point(_owner.x, _owner.y);

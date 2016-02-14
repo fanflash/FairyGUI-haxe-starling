@@ -10,6 +10,8 @@ import fairygui.utils.ToolSet;
 
 import starling.textures.TextureSmoothing;
 
+import haxe.xml.Fast;
+
 class GImage extends GObject implements IColorGear
 {
     public var color(get, set) : Int;
@@ -114,7 +116,7 @@ class GImage extends GObject implements IColorGear
         _content.scaleY = this.height / _sourceHeight * this.scaleY;
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         super.setup_beforeAdd(xml);
         
@@ -128,11 +130,11 @@ class GImage extends GObject implements IColorGear
             _content.flip = FlipType.parse(str);
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
-        var cxml : FastXML = xml.nodes.gearAni.get(0);
+        var cxml : Fast = xml.nodes.gearAni.get(0);
         cxml = xml.nodes.gearColor.get(0);
         if (cxml != null) 
             _gearColor.setup(cxml);

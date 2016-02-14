@@ -16,6 +16,8 @@ import starling.events.Touch;
 import starling.events.TouchEvent;
 import starling.events.TouchPhase;
 
+import haxe.xml.Fast;
+
 class GTextInput extends GTextField
 {
     public var nativeTextField(get, never) : TextField;
@@ -117,14 +119,14 @@ class GTextInput extends GTextField
         renderTextField.text = _text;
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         super.setup_beforeAdd(xml);
         
         _promptText = xml.att.prompt;
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         

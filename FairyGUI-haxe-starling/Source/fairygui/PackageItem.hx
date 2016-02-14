@@ -11,6 +11,8 @@ import fairygui.text.BitmapFont;
 
 import starling.textures.Texture;
 
+import haxe.xml.Fast;
+
 class PackageItem
 {
     public var owner : UIPackage;
@@ -42,7 +44,7 @@ class PackageItem
     public var frames : Array<Frame>;
     
     //componenet
-    public var componentData : FastXML;
+    public var componentData : Fast;
     
     //sound
     public var sound : Sound;

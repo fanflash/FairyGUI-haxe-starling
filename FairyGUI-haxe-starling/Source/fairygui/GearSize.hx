@@ -13,7 +13,7 @@ class GearSize extends GearBase
 	{
 		super(owner);
 	}
-	
+
 	override private function init():Void
 	{
 		_default=new GearSizeValue(_owner.width, _owner.height, _owner.scaleX, _owner.scaleY);

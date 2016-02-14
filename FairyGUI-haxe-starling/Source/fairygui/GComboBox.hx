@@ -14,6 +14,8 @@ import fairygui.utils.ToolSet;
 
 import starling.events.Event;
 
+import haxe.xml.Fast;
+
 @:meta(Event(name="stateChanged",type="fairygui.event.StateChangeEvent"))
 
 class GComboBox extends GComponent
@@ -163,7 +165,7 @@ class GComboBox extends GComponent
             _buttonController.selectedPage = val;
     }
     
-    override private function constructFromXML(xml : FastXML) : Void
+    override private function constructFromXML(xml : Fast) : Void
     {
         super.constructFromXML(xml);
         
@@ -210,7 +212,7 @@ class GComboBox extends GComponent
         this.addEventListener(GTouchEvent.END, __mouseup);
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
@@ -223,7 +225,7 @@ class GComboBox extends GComponent
                 this.titleColor = ToolSet.convertFromHtmlColor(str);
             str = xml.att.visibleItemCount;
             if (str != null) 
-                _visibleItemCount = parseInt(str);
+                _visibleItemCount = Std.parseInt(str);
             
             var col : FastXMLList = xml.node.item.innerData;
             for (cxml in col)

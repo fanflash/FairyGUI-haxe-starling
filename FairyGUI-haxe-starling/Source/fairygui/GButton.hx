@@ -1,17 +1,21 @@
 package fairygui;
 
+import Std;
+
 import fairygui.GComponent;
 import fairygui.GObject;
 import fairygui.GRoot;
 import fairygui.PackageItem;
 import fairygui.PageOption;
 
-import openfl.media.Sound;
-
 import fairygui.event.GTouchEvent;
 import fairygui.event.StateChangeEvent;
 import fairygui.utils.GTimers;
 import fairygui.utils.ToolSet;
+
+import openfl.media.Sound;
+
+import haxe.xml.Fast;
 
 @:meta(Event(name="stateChanged",type="fairygui.event.StateChangeEvent"))
 
@@ -360,7 +364,7 @@ class GButton extends GComponent
         super.handleGrayChanged();
     }
     
-    override private function constructFromXML(xml : FastXML) : Void
+    override private function constructFromXML(xml : Fast) : Void
     {
         super.constructFromXML(xml);
         
@@ -374,7 +378,7 @@ class GButton extends GComponent
         _sound = xml.att.sound;
         str = xml.att.volume;
         if (str != null) 
-            _soundVolumeScale = parseInt(str) / 100;
+            _soundVolumeScale = Std.parseInt(str) / 100;
         
         _buttonController = getController("button");
         _titleObject = getChild("title");
@@ -393,7 +397,7 @@ class GButton extends GComponent
         this.addEventListener(GTouchEvent.CLICK, __click);
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
@@ -418,7 +422,7 @@ class GButton extends GComponent
                 _sound = xml.att.sound;
             str = xml.att.volume;
             if (str != null) 
-                _soundVolumeScale = parseInt(str) / 100;
+                _soundVolumeScale = Std.parseInt(str) / 100;
             
             str = xml.att.controller;
             if (str != null) 

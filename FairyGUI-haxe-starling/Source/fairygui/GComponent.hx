@@ -8,14 +8,15 @@ import fairygui.PackageItem;
 import fairygui.ScrollPane;
 import fairygui.Transition;
 import fairygui.UIPackage;
-import flash.errors.ArgumentError;
-import flash.errors.Error;
-import flash.errors.RangeError;
+import fairygui.display.UISprite;
 
+import openfl.errors.ArgumentError;
+import openfl.errors.Error;
+import openfl.errors.RangeError;
 import openfl.geom.Point;
 import openfl.geom.Rectangle;
 
-import fairygui.display.UISprite;
+import haxe.xml.Fast;
 
 import starling.display.DisplayObjectContainer;
 import starling.display.Sprite;
@@ -763,14 +764,14 @@ class GComponent extends GObject
         constructFromXML(_packageItem.owner.getComponentData(_packageItem));
     }
     
-    private function constructFromXML(xml : FastXML) : Void
+    private function constructFromXML(xml : Fast) : Void
     {
         var str : String;
         var arr : Array<Dynamic>;
         
         _underConstruct = true;
         
-        str = xml.att.size;
+        str = xml.att.resolve("size");
         arr = str.split(",");
         _sourceWidth = Int(arr[0]);
         _sourceHeight = Int(arr[1]);
@@ -778,37 +779,37 @@ class GComponent extends GObject
         _initHeight = _sourceHeight;
         
         var overflow : Int;
-        str = xml.att.overflow;
+        str = xml.att.resolve("overflow");
         if (str != null) 
             overflow = OverflowType.parse(str)
         else 
         overflow = OverflowType.Visible;
         
         var scroll : Int;
-        str = xml.att.scroll;
+        str = xml.att.resolve("scroll");
         if (str != null) 
             scroll = ScrollType.parse(str)
         else 
         scroll = ScrollType.Vertical;
         
         var scrollBarDisplay : Int;
-        str = xml.att.scrollBar;
+        str = xml.att.resolve("scrollBar");
         if (str != null) 
             scrollBarDisplay = ScrollBarDisplayType.parse(str)
         else 
         scrollBarDisplay = ScrollBarDisplayType.Default;
-        var scrollBarFlags : Int = parseInt(xml.att.scrollBarFlags);
+        var scrollBarFlags : Int = Std.parseInt(xml.att.scrollBarFlags);
         
         var scrollBarMargin : Margin;
         if (overflow == OverflowType.Scroll) 
         {
             scrollBarMargin = new Margin();
-            str = xml.att.scrollBarMargin;
+            str = xml.att.resolve("scrollBarMargin");
             if (str != null) 
                 scrollBarMargin.parse(str);
         }
         
-        str = xml.att.margin;
+        str = xml.att.resolve("margin");
         if (str != null) 
             _margin.parse(str);
         
@@ -816,7 +817,7 @@ class GComponent extends GObject
         setupOverflowAndScroll(overflow, scrollBarMargin, scroll, scrollBarDisplay, scrollBarFlags);
         
         _buildingDisplayList = true;
-        
+
         var col : FastXMLList = xml.node.controller.innerData;
         var controller : Controller;
         for (cxml in col)
@@ -877,9 +878,9 @@ class GComponent extends GObject
         }
     }
     
-    private function constructChild(xml : FastXML) : GObject
+    private function constructChild(xml : Fast) : GObject
     {
-        var pkgId : String = xml.att.pkg;
+        var pkgId : String = xml.att.resolve("pkg");
         var thisPkg : UIPackage = _packageItem.owner;
         var pkg : UIPackage;
         if (pkgId != null && pkgId != thisPkg.id) 
@@ -891,7 +892,7 @@ class GComponent extends GObject
         else 
         pkg = thisPkg;
         
-        var src : String = xml.att.src;
+        var src : String = xml.att.resolve("src");
         if (src != null) 
         {
             var pi : PackageItem = pkg.getItemById(src);
@@ -904,7 +905,7 @@ class GComponent extends GObject
         else 
         {
             var str : String = xml.node.name.innerData().localName;
-            if (str == "text" && xml.att.input == "true") 
+            if (str == "text" && xml.att.resolve("input") == "true")
                 g = new GTextInput()
             else 
             g = UIObjectFactory.newObject2(str);

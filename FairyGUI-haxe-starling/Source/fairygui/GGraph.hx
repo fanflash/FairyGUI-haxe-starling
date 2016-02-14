@@ -13,6 +13,8 @@ import starling.display.DisplayObject;
 import starling.display.Sprite;
 import starling.utils.StarlingUtils;
 
+import haxe.xml.Fast;
+
 class GGraph extends GObject
 {
     private var shape(get, never) : Shape;
@@ -134,7 +136,7 @@ class GGraph extends GObject
         }
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         var type : String = xml.att.type;
         if (type != null && type != "empty") 

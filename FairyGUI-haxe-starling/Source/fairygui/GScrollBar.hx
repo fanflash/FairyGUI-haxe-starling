@@ -7,6 +7,8 @@ import openfl.geom.Point;
 
 import fairygui.event.GTouchEvent;
 
+import haxe.xml.Fast;
+
 class GScrollBar extends GComponent
 {
     public var displayPerc(never, set) : Float;
@@ -70,7 +72,7 @@ class GScrollBar extends GComponent
         return (_arrowButton1 != (null) ? _arrowButton1.width : 0) + (_arrowButton2 != (null) ? _arrowButton2.width : 0);
     }
     
-    override private function constructFromXML(xml : FastXML) : Void
+    override private function constructFromXML(xml : Fast) : Void
     {
         super.constructFromXML(xml);
         
@@ -118,10 +120,11 @@ class GScrollBar extends GComponent
     private function __gripDragging(evt : GTouchEvent) : Void
     {
         var pt : Point = this.globalToLocal(evt.stageX, evt.stageY, sHelperPoint);
+        var diff : Float
         if (_vertical) 
         {
             var curY : Float = pt.y - _dragOffset.y;
-            var diff : Float = _bar.height - _grip.height;
+            diff = _bar.height - _grip.height;
             if (diff == 0) 
                 _target.setPercY(0, false)
             else 

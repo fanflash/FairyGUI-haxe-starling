@@ -525,7 +525,7 @@ class GRoot extends GComponent
         
         _nativeStage.addEventListener(TouchEvent.TOUCH, __stageTouch);
         
-        var stage : flash.display.Stage = Starling.current.nativeStage;
+        var stage : openfl.display.Stage = Starling.current.nativeStage;
         stage.addEventListener(MouseEvent.MOUSE_DOWN, __stageMouseDownCapture, true);
         stage.addEventListener(MouseEvent.MOUSE_UP, __stageMouseUpCapture, true);
         stage.addEventListener(MouseEvent.RIGHT_MOUSE_DOWN, __stageMouseDownCapture, true);

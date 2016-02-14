@@ -3,6 +3,8 @@ package fairygui;
 import fairygui.GObject;
 import fairygui.GTextField;
 
+import haxe.xml.Fast;
+
 class GProgressBar extends GComponent
 {
     public var titleType(get, set) : Int;
@@ -124,7 +126,7 @@ class GProgressBar extends GComponent
             cast((_aniObject), GSwfObject).frame = Math.round(percent * 100);
     }
     
-    override private function constructFromXML(xml : FastXML) : Void
+    override private function constructFromXML(xml : Fast) : Void
     {
         super.constructFromXML(xml);
         
@@ -168,15 +170,15 @@ class GProgressBar extends GComponent
             update();
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
         xml = xml.nodes.ProgressBar.get(0);
         if (xml != null) 
         {
-            _value = parseInt(xml.att.value);
-            _max = parseInt(xml.att.max);
+            _value = Std.parseInt(xml.att.value);
+            _max = Std.parseInt(xml.att.max);
         }
         update();
     }

@@ -4,6 +4,8 @@ import fairygui.GObject;
 
 import fairygui.utils.ToolSet;
 
+import haxe.xml.Fast;
+
 class GLabel extends GComponent
 {
     public var icon(get, set) : String;
@@ -106,7 +108,7 @@ class GLabel extends GComponent
         return false;
     }
     
-    override private function constructFromXML(xml : FastXML) : Void
+    override private function constructFromXML(xml : Fast) : Void
     {
         super.constructFromXML(xml);
         
@@ -114,7 +116,7 @@ class GLabel extends GComponent
         _iconObject = getChild("icon");
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         

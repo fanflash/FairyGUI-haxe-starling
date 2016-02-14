@@ -2,6 +2,7 @@ package fairygui;
 
 import fairygui.GObject;
 import openfl.errors.Error;
+import haxe.xml.Fast;
 
 class Relations
 {
@@ -15,7 +16,7 @@ class Relations
     @:allow(fairygui)
     private var sizeDirty : Bool;
     
-    private static var RELATION_NAMES : Array<Dynamic> = 
+    private static var RELATION_NAMES : Array<String> =
         ["left-left",   //0
         "left-center", 
         "left-right", 
@@ -39,7 +40,8 @@ class Relations
         "topext-top",   //20  
         "topext-bottom", 
         "bottomext-top", 
-        "bottomext-bottom"  //23  ];
+        "bottomext-bottom"  //23
+    ];
     
     public function new(owner : GObject)
     {
@@ -208,7 +210,7 @@ class Relations
         return _items.length == 0;
     }
     
-    public function setup(xml : FastXML) : Void
+    public function setup(xml : Fast) : Void
     {
         var col : FastXMLList = xml.node.relation.innerData;
         var targetId : String;

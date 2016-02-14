@@ -23,6 +23,8 @@ import starling.display.DisplayObject;
 import starling.textures.Texture;
 import starling.textures.TextureSmoothing;
 
+import haxe.xml.Fast;
+
 class GLoader extends GObject implements IColorGear implements IAnimationGear
 {
     public var url(get, set) : String;
@@ -405,7 +407,7 @@ class GLoader extends GObject implements IColorGear implements IAnimationGear
     
     private function __externalLoadCompleted(evt : Event) : Void
     {
-        var cc : flash.display.DisplayObject = _externalLoader.content;
+        var cc : openfl.display.DisplayObject = _externalLoader.content;
         if (Std.is(cc, Bitmap)) 
         {
             var bmd : BitmapData = cast((cc), Bitmap).bitmapData;
@@ -561,7 +563,7 @@ class GLoader extends GObject implements IColorGear implements IAnimationGear
         _container.scaleY = this.scaleY;
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         super.setup_beforeAdd(xml);
         
@@ -598,11 +600,11 @@ class GLoader extends GObject implements IColorGear implements IAnimationGear
             loadContent();
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
-        var cxml : FastXML = xml.nodes.gearAni.get(0);
+        var cxml : Fast = xml.nodes.gearAni.get(0);
         if (cxml != null) 
             _gearAnimation.setup(cxml);
         cxml = xml.nodes.gearAni.get(0);

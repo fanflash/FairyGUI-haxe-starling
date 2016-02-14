@@ -22,7 +22,8 @@ class HtmlText
             var list : FastXMLList = xml.node.children.innerData();
             parsedText = "";
             parseXML(list);
-        }        catch (e : Dynamic){
+        }
+        catch (e : Dynamic){
             parsedText = val;
             elements.length = 0;
             trace(e);

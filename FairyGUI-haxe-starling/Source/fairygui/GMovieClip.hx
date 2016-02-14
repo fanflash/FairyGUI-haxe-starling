@@ -11,6 +11,8 @@ import fairygui.display.MovieClip;
 import fairygui.display.UIMovieClip;
 import fairygui.utils.ToolSet;
 
+import haxe.xml.Fast;
+
 class GMovieClip extends GObject implements IAnimationGear implements IColorGear
 {
     public var color(get, set) : Int;
@@ -130,14 +132,14 @@ class GMovieClip extends GObject implements IAnimationGear implements IColorGear
         handleSizeChanged();
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         super.setup_beforeAdd(xml);
         
         var str : String;
         str = xml.att.frame;
         if (str != null) 
-            _movieClip.currentFrame = parseInt(str);
+            _movieClip.currentFrame = Std.parseInt(str);
         str = xml.att.playing;
         _movieClip.playing = str != "false";
         str = xml.att.color;
@@ -145,11 +147,11 @@ class GMovieClip extends GObject implements IAnimationGear implements IColorGear
             this.color = ToolSet.convertFromHtmlColor(str);
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
-        var cxml : FastXML = xml.nodes.gearAni.get(0);
+        var cxml : Fast = xml.nodes.gearAni.get(0);
         if (cxml != null) 
             _gearAnimation.setup(cxml);
         cxml = xml.nodes.gearColor.get(0);

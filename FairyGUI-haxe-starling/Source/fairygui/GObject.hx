@@ -1,5 +1,6 @@
 package fairygui;
 
+import starling.utils.StarlingUtils;
 import fairygui.Controller;
 import fairygui.GButton;
 import fairygui.GComboBox;
@@ -23,11 +24,11 @@ import fairygui.GearXY;
 import fairygui.PackageItem;
 import fairygui.Relations;
 
-import flash.geom.Point;
-import flash.geom.Rectangle;
-import flash.text.TextField;
-import flash.text.TextFieldType;
-import flash.ui.Mouse;
+import openfl.geom.Point;
+import openfl.geom.Rectangle;
+import openfl.text.TextField;
+import openfl.text.TextFieldType;
+import openfl.ui.Mouse;
 
 
 import fairygui.event.DragEvent;
@@ -44,7 +45,10 @@ import starling.events.Touch;
 import starling.events.TouchEvent;
 import starling.events.TouchPhase;
 import starling.filters.ColorMatrixFilter;
-import starling.utils.Deg2rad;
+
+import starling.utils.StarlingUtils;
+
+import haxe.xml.Fast;
 
 @:meta(Event(name="startDrag",type="fairygui.event.DragEvent"))
 
@@ -182,7 +186,7 @@ class GObject extends EventDispatcher
     @:allow(fairygui)
     private var _underConstruct : Bool;
     @:allow(fairygui)
-    private var _constructingData : FastXML;
+    private var _constructingData : Fast;
     @:allow(fairygui)
     private var _gearLocked : Bool;
     
@@ -577,7 +581,7 @@ class GObject extends EventDispatcher
             _rotation = value;
             applyPivot();
             if (_displayObject != null) 
-                _displayObject.rotation = deg2rad(this.normalizeRotation);
+                _displayObject.rotation = StarlingUtils.deg2rad(this.normalizeRotation);
             
             if (_gearLook.controller) 
                 _gearLook.updateState();
@@ -725,7 +729,7 @@ class GObject extends EventDispatcher
         }
         
         _tooltips = value;
-        if (_tooltips != null && Mouse.supportsCursor) 
+        if (_tooltips != null && Mouse.supportsCursor)
         {
             this.addEventListener(GTouchEvent.ROLL_OVER, __rollOver);
             this.addEventListener(GTouchEvent.ROLL_OUT, __rollOut);
@@ -1181,7 +1185,7 @@ class GObject extends EventDispatcher
         _packageItem = pkgItem;
     }
     
-    public function setup_beforeAdd(xml : FastXML) : Void
+    public function setup_beforeAdd(xml : Fast) : Void
     {
         var str : String;
         var arr : Array<Dynamic>;
@@ -1206,7 +1210,7 @@ class GObject extends EventDispatcher
         if (str != null) 
         {
             arr = str.split(",");
-            setScale(parseFloat(arr[0]), parseFloat(arr[1]));
+            setScale(Std.parseFloat(arr[0]), Std.parseFloat(arr[1]));
         }
         
         str = xml.att.rotation;
@@ -1215,7 +1219,7 @@ class GObject extends EventDispatcher
         
         str = xml.att.alpha;
         if (str != null) 
-            this.alpha = parseFloat(str);
+            this.alpha = Std.parseFloat(str);
         
         str = xml.att.pivot;
         if (str != null) 
@@ -1230,9 +1234,9 @@ class GObject extends EventDispatcher
         this.tooltips = xml.att.tooltips;
     }
     
-    public function setup_afterAdd(xml : FastXML) : Void
+    public function setup_afterAdd(xml : Fast) : Void
     {
-        var cxml : FastXML;
+        var cxml : Fast;
         
         var s : String = xml.att.group;
         if (s != null) 
@@ -1311,12 +1315,13 @@ class GObject extends EventDispatcher
     private function __touch(evt : TouchEvent) : Void
     {
         var touch : Touch = evt.getTouch(displayObject);
+        var devt : GTouchEvent;
         if (touch == null) 
         {
             if (_rollOver) 
             {
                 _rollOver = false;
-                var devt : GTouchEvent = new GTouchEvent(GTouchEvent.ROLL_OUT);
+                devt = new GTouchEvent(GTouchEvent.ROLL_OUT);
                 devt.copyFrom(evt, touch);
                 this.dispatchEvent(devt);
             }
@@ -1351,7 +1356,7 @@ class GObject extends EventDispatcher
     {
         if (_buttonStatus == 0 || GRoot.touchPointInput && _touchPointId != touch.id) 
             return;
-        
+        var devt : GTouchEvent
         if (_buttonStatus == 1) 
         {
             var cc : Int = 1;
@@ -1363,8 +1368,8 @@ class GObject extends EventDispatcher
             }
             else 
             _lastClick = now;
-            
-            var devt : GTouchEvent = new GTouchEvent(GTouchEvent.CLICK);
+
+            devt = new GTouchEvent(GTouchEvent.CLICK);
             devt.copyFrom(evt, touch, cc);
             
             this.dispatchEvent(devt);

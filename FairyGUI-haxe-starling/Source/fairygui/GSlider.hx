@@ -7,6 +7,7 @@ import openfl.geom.Point;
 
 import fairygui.event.GTouchEvent;
 import fairygui.event.StateChangeEvent;
+import haxe.xml.Fast;
 
 @:meta(Event(name="stateChanged",type="fairygui.event.StateChangeEvent"))
 
@@ -120,7 +121,7 @@ class GSlider extends GComponent
             cast((_aniObject), GSwfObject).frame = Math.round(percent * 100);
     }
     
-    override private function constructFromXML(xml : FastXML) : Void
+    override private function constructFromXML(xml : Fast) : Void
     {
         super.constructFromXML(xml);
         
@@ -167,15 +168,15 @@ class GSlider extends GComponent
             update();
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
         xml = xml.nodes.Slider.get(0);
         if (xml != null) 
         {
-            _value = parseInt(xml.att.value);
-            _max = parseInt(xml.att.max);
+            _value = Std.parseInt(xml.att.value);
+            _max = Std.parseInt(xml.att.max);
         }
         
         update();

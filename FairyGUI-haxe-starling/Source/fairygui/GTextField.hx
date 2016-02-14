@@ -19,6 +19,8 @@ import fairygui.utils.ToolSet;
 
 import starling.events.Event;
 
+import haxe.xml.Fast;
+
 class GTextField extends GObject implements IColorGear
 {
     public var font(get, set) : String;
@@ -905,7 +907,7 @@ class GTextField extends GObject implements IColorGear
         displayObject.y = this.y + _yOffset;
     }
     
-    override public function setup_beforeAdd(xml : FastXML) : Void
+    override public function setup_beforeAdd(xml : Fast) : Void
     {
         super.setup_beforeAdd(xml);
         
@@ -933,13 +935,13 @@ class GTextField extends GObject implements IColorGear
         
         str = xml.att.leading;
         if (str != null) 
-            _leading = parseInt(str)
+            _leading = Std.parseInt(str)
         else 
         _leading = 3;
         
         str = xml.att.letterSpacing;
         if (str != null) 
-            _letterSpacing = parseInt(str);
+            _letterSpacing = Std.parseInt(str);
         
         _ubbEnabled = xml.att.ubb == "true";
         
@@ -964,7 +966,7 @@ class GTextField extends GObject implements IColorGear
         }
     }
     
-    override public function setup_afterAdd(xml : FastXML) : Void
+    override public function setup_afterAdd(xml : Fast) : Void
     {
         super.setup_afterAdd(xml);
         
@@ -974,7 +976,7 @@ class GTextField extends GObject implements IColorGear
             this.text = str;
         _sizeDirty = false;
         
-        var cxml : FastXML = xml.nodes.gearColor.get(0);
+        var cxml : Fast = xml.nodes.gearColor.get(0);
         if (cxml != null) 
             _gearColor.setup(cxml);
     }

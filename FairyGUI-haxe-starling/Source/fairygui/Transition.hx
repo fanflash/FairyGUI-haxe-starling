@@ -728,19 +728,19 @@ class Transition
         }
     }
     
-    public function setup(xml : FastXML) : Void
+    public function setup(xml : Fast) : Void
     {
         this.name = xml.att.name;
         var str : String = xml.att.options;
         if (str != null) 
-            _options = parseInt(str);
+            _options = Std.parseInt(str);
         var col : FastXMLList = xml.node.item.innerData;
         for (cxml in col)
         {
             var item : TransitionItem = new TransitionItem();
             _items.push(item);
             
-            item.time = parseInt(cxml.att.time) / FRAME_RATE;
+            item.time = Std.parseInt(cxml.att.time) / FRAME_RATE;
             item.targetId = cxml.att.target;
             str = cxml.att.type;
             switch (str)
@@ -782,7 +782,7 @@ class Transition
             
             if (item.tween) 
             {
-                item.duration = parseInt(cxml.att.duration) / FRAME_RATE;
+                item.duration = Std.parseInt(cxml.att.duration) / FRAME_RATE;
                 
                 str = cxml.att.ease;
                 if (str != null) 
@@ -796,7 +796,7 @@ class Transition
                     item.easeType = EaseLookup.find(str);
                 }
                 
-                item.repeat = parseInt(cxml.att.repeat);
+                item.repeat = Std.parseInt(cxml.att.repeat);
                 item.yoyo = cxml.att.yoyo == "true";
                 item.label2 = cxml.att.label2;
                 if (item.label2.length == 0) 
@@ -848,7 +848,7 @@ class Transition
                 }
                 else 
                 {
-                    value.f1 = parseInt(arr[0]);
+                    value.f1 = Std.parseInt(arr[0]);
                     value.b1 = true;
                 }
                 if (arr[1] == "-") 
@@ -857,20 +857,20 @@ class Transition
                 }
                 else 
                 {
-                    value.f2 = parseInt(arr[1]);
+                    value.f2 = Std.parseInt(arr[1]);
                     value.b2 = true;
                 }
             
             case TransitionActionType.Alpha:
-                value.f1 = parseFloat(str);
+                value.f1 = Std.parseFloat(str);
             
             case TransitionActionType.Rotation:
-                value.i = parseInt(str);
+                value.i = Std.parseInt(str);
             
             case TransitionActionType.Scale:
                 arr = str.split(",");
-                value.f1 = parseFloat(arr[0]);
-                value.f2 = parseFloat(arr[1]);
+                value.f1 = Std.parseFloat(arr[0]);
+                value.f2 = Std.parseFloat(arr[1]);
             
             case TransitionActionType.Color:
                 value.c = ToolSet.convertFromHtmlColor(str);
@@ -883,7 +883,7 @@ class Transition
                 }
                 else 
                 {
-                    value.i = parseInt(arr[0]);
+                    value.i = Std.parseInt(arr[0]);
                     value.b1 = true;
                 }
                 value.b = arr[1] == "p";
@@ -899,7 +899,7 @@ class Transition
                 value.s = arr[0];
                 if (arr.length > 1) 
                 {
-                    var intv : Int = parseInt(arr[1]);
+                    var intv : Int = Std.parseInt(arr[1]);
                     if (intv == 0 || intv == 100) 
                         value.f1 = 1
                     else 
@@ -912,14 +912,14 @@ class Transition
                 arr = str.split(",");
                 value.s = arr[0];
                 if (arr.length > 1) 
-                    value.i = parseInt(arr[1])
+                    value.i = Std.parseInt(arr[1])
                 else 
                 value.i = 1;
             
             case TransitionActionType.Shake:
                 arr = str.split(",");
-                value.f1 = parseFloat(arr[0]);
-                value.f2 = parseFloat(arr[1]);
+                value.f1 = Std.parseFloat(arr[0]);
+                value.f2 = Std.parseFloat(arr[1]);
         }
     }
 }

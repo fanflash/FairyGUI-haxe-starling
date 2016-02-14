@@ -2,6 +2,7 @@ package fairygui;
 
 import fairygui.Cls;
 import fairygui.LoaderExtension;
+import haxe.xml.Fast;
 
 class UIObjectFactory
 {
@@ -45,7 +46,7 @@ class UIObjectFactory
                 if (cls != null) 
                     return Type.createInstance(cls, []);
                 
-                var xml : FastXML = pi.owner.getComponentData(pi);
+                var xml : Fast = pi.owner.getComponentData(pi);
                 
                 var extention : String = xml.att.extention;
                 if (extention != null) 

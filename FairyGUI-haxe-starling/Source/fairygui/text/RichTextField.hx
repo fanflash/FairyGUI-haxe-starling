@@ -1,5 +1,6 @@
 package fairygui.text;
 
+import openfl.Lib;
 import fairygui.text.RichTextObjectFactory;
 
 import openfl.geom.Rectangle;
@@ -836,7 +837,7 @@ class RichTextField extends Sprite
                 var i : Int = url.indexOf("event:");
                 if (i == 0) 
                     this.dispatchEvent(new TextEvent(TextEvent.LINK, true, url.substring(6)))
-                else 
+                else
                 flash.net.navigateToURL(new URLRequest(url), node.element.target);
             }
         }

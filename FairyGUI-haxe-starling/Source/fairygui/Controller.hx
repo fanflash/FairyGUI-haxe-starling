@@ -8,6 +8,8 @@ import fairygui.event.StateChangeEvent;
 
 import starling.events.EventDispatcher;
 
+import haxe.xml.Fast;
+
 @:meta(Event(name="stateChanged",type="fairygui.event.StateChangeEvent"))
 
 class Controller extends EventDispatcher
@@ -295,7 +297,7 @@ class Controller extends EventDispatcher
         return _pageIds[_previousIndex];
     }
     
-    public function setup(xml : FastXML) : Void
+    public function setup(xml : Fast) : Void
     {
         _name = xml.att.name;
         _autoRadioGroupDepth = xml.att.autoRadioGroupDepth == "true";
