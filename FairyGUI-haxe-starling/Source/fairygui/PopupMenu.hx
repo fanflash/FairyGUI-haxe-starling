@@ -6,6 +6,7 @@ import openfl.errors.Error;
 import fairygui.event.ItemEvent;
 
 import starling.events.Event;
+import starling.utils.Max;
 
 class PopupMenu
 {
@@ -209,6 +210,6 @@ class PopupMenu
     private function __addedToStage(evt : Event) : Void
     {
         _list.selectedIndex = -1;
-        _list.resizeToFit(Int.MAX_VALUE, 10);
+        _list.resizeToFit(Max.INT_MAX_VALUE, 10);
     }
 }

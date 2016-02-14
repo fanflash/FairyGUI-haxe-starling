@@ -18,6 +18,7 @@ import fairygui.utils.CharSize;
 import fairygui.utils.ToolSet;
 
 import starling.events.Event;
+import starling.utils.Max;
 
 import haxe.xml.Fast;
 
@@ -431,7 +432,7 @@ class GTextField extends GObject implements IColorGear
         {
             _bitmapFont = UIPackage.getBitmapFontByURL(_font);
             _fontAdjustment = 0;
-            _minHeight = Int.MAX_VALUE;
+            _minHeight = Max.INT_MAX_VALUE;
         }
         else 
         {

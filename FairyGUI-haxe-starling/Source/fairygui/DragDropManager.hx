@@ -8,6 +8,8 @@ import openfl.geom.Point;
 import fairygui.event.DragEvent;
 import fairygui.event.DropEvent;
 
+import starling.utils.Max;
+
 class DragDropManager
 {
     public static var inst(get, never) : DragDropManager;
@@ -31,7 +33,7 @@ class DragDropManager
         _agent.draggable = true;
         _agent.touchable = false;  //important  
         _agent.setSize(100, 100);
-        _agent.sortingOrder = Int.MAX_VALUE;
+        _agent.sortingOrder = Max.INT_MAX_VALUE;
         _agent.addEventListener(DragEvent.DRAG_END, __dragEnd);
     }
     

@@ -11,6 +11,8 @@ import openfl.geom.Point;
 import fairygui.event.ItemEvent;
 import fairygui.event.GTouchEvent;
 
+import starling.utils.Max;
+
 @:meta(Event(name="itemClick",type="fairygui.event.ItemEvent"))
 
 class GList extends GComponent
@@ -600,7 +602,7 @@ class GList extends GComponent
         }
     }
     
-    public function resizeToFit(itemCount : Int = Int.MAX_VALUE, minSize : Int = 0) : Void
+    public function resizeToFit(itemCount : Int = Max.INT_MAX_VALUE, minSize : Int = 0) : Void
     {
         ensureBoundsCorrect();
         

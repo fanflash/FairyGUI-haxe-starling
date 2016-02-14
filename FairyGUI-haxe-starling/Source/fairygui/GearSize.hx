@@ -1,6 +1,5 @@
 package fairygui;
 
-import com.greensock.TweenLite;
 import motion.Actuate;
 
 class GearSize extends GearBase

@@ -1,6 +1,7 @@
 package fairygui;
 
 import fairygui.GObject;
+import starling.utils.Max;
 
 class GGroup extends GObject
 {
@@ -22,10 +23,10 @@ class GGroup extends GObject
         var cnt : Int = _parent.numChildren;
         var i : Int;
         var child : GObject;
-        var ax : Int = Int.MAX_VALUE;
-        var ay : Int = Int.MAX_VALUE;
-        var ar : Int = Int.MIN_VALUE;
-        var ab : Int = Int.MIN_VALUE;
+        var ax : Int = Max.INT_MAX_VALUE;
+        var ay : Int = Max.INT_MAX_VALUE;
+        var ar : Int = Max.INT_MIN_VALUE;
+        var ab : Int = Max.INT_MIN_VALUE;
         var tmp : Int;
         _empty = true;
         for (i in 0...cnt){

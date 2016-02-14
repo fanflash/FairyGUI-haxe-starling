@@ -20,6 +20,7 @@ import haxe.xml.Fast;
 
 import starling.display.DisplayObjectContainer;
 import starling.display.Sprite;
+import starling.utils.Max;
 
 @:meta(Event(name="scrollEvent",type="starling.events.Event"))
 
@@ -632,9 +633,10 @@ class GComponent extends GObject
         var ah : Int;
         if (_children.length > 0) 
         {
-            ax = Int.MAX_VALUE;ay = Int.MAX_VALUE;
-            var ar : Int = Int.MIN_VALUE;
-            var ab : Int = Int.MIN_VALUE;
+            ax = Max.INT_MAX_VALUE;
+            ay = Max.INT_MAX_VALUE;
+            var ar : Int = Max.INT_MIN_VALUE;
+            var ab : Int = Max.INT_MIN_VALUE;
             var tmp : Int;
             
             for (child in _children)

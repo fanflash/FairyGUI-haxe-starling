@@ -1359,7 +1359,7 @@ class GObject extends EventDispatcher
     {
         if (_buttonStatus == 0 || GRoot.touchPointInput && _touchPointId != touch.id) 
             return;
-        var devt : GTouchEvent
+        var devt : GTouchEvent;
         if (_buttonStatus == 1) 
         {
             var cc : Int = 1;

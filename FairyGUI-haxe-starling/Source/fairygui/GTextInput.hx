@@ -15,6 +15,7 @@ import starling.core.Starling;
 import starling.events.Touch;
 import starling.events.TouchEvent;
 import starling.events.TouchPhase;
+import starling.utils.Max;
 
 import haxe.xml.Fast;
 
@@ -160,7 +161,7 @@ class GTextInput extends GTextField
             _nativeTextField.wordWrap = !_singleLine;
             _nativeTextField.multiline = !_singleLine;
             _nativeTextField.text = _text;
-            _nativeTextField.setSelection(0, Int.MAX_VALUE);
+            _nativeTextField.setSelection(0, Max.INT_MAX_VALUE);
             
             var rect : Rectangle = this.localToGlobalRect(0, -_yOffset - _fontAdjustment, this.width, this.height + _fontAdjustment);
             var stage : Stage = Starling.current.nativeStage;
