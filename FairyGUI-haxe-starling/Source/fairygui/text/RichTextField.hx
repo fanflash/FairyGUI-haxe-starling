@@ -1,6 +1,5 @@
 package fairygui.text;
 
-import openfl.Lib;
 import fairygui.text.RichTextObjectFactory;
 
 import openfl.geom.Rectangle;

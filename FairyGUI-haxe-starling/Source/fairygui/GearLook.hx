@@ -1,6 +1,6 @@
 package fairygui;
 
-import com.greensock.TweenLite;
+import motion.Actuate;
 
 import openfl.geom.Point;
 
@@ -9,7 +9,7 @@ class GearLook extends GearBase
 	private var _storage:Dynamic;
 	private var _default:GearLookValue;
 	private var _tweenValue:Point;
-	private var _tweener:TweenLite;
+	private var _tweener:Actuate;
 	
 	public function new(owner:GObject)
 	{
@@ -33,8 +33,8 @@ class GearLook extends GearBase
 			gv=new GearLookValue();
 			_storage[pageId]=gv;
 		}
-		gv.alpha=parseFloat(arr[0]);
-		gv.rotation=parseInt(arr[1]);
+		gv.alpha=Std.parseFloat(arr[0]);
+		gv.rotation=Std.parseInt(arr[1]);
 		gv.grayed=arr[2]=="1"?true:false;
 	}
 	
@@ -87,7 +87,7 @@ class GearLook extends GearBase
 					_tweenValue=new Point();
 				_tweenValue.x=_owner.alpha;
 				_tweenValue.y=_owner.rotation;
-				_tweener=TweenLite.to(_tweenValue, _tweenTime, vars);
+				_tweener=Actuate.tween(_tweenValue, _tweenTime, vars);
 			}
 		}
 		else

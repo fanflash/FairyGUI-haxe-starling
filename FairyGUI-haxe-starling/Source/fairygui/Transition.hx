@@ -202,20 +202,20 @@ class Transition
                 case TransitionActionType.XY, TransitionActionType.Size, TransitionActionType.Pivot, TransitionActionType.Scale:
                     value.b1 = true;
                     value.b2 = true;
-                    value.f1 = parseFloat(args[0]);
-                    value.f2 = parseFloat(args[1]);
+                    value.f1 = Std.parseFloat(args[0]);
+                    value.f2 = Std.parseFloat(args[1]);
                 
                 case TransitionActionType.Alpha:
-                    value.f1 = parseFloat(args[0]);
+                    value.f1 = Std.parseFloat(args[0]);
                 
                 case TransitionActionType.Rotation:
-                    value.i = parseInt(args[0]);
+                    value.i = Std.parseInt(args[0]);
                 
                 case TransitionActionType.Color:
-                    value.c = parseFloat(args[0]);
+                    value.c = Std.parseFloat(args[0]);
                 
                 case TransitionActionType.Animation:
-                    value.i = parseInt(args[0]);
+                    value.i = Std.parseInt(args[0]);
                     if (args.length > 1) 
                         value.b = args[1];
                 
@@ -228,17 +228,17 @@ class Transition
                 case TransitionActionType.Sound:
                     value.s = args[0];
                     if (args.length > 1) 
-                        value.f1 = parseFloat(args[1]);
+                        value.f1 = Std.parseFloat(args[1]);
                 
                 case TransitionActionType.Transition:
                     value.s = args[0];
                     if (args.length > 1) 
-                        value.i = parseInt(args[1]);
+                        value.i = Std.parseInt(args[1]);
                 
                 case TransitionActionType.Shake:
-                    value.f1 = parseFloat(args[0]);
+                    value.f1 = Std.parseFloat(args[0]);
                     if (args.length > 1) 
-                        value.f2 = parseFloat(args[1]);
+                        value.f2 = Std.parseFloat(args[1]);
             }
         }
     }
@@ -654,7 +654,7 @@ class Transition
                             cc.selectedPage = str;
                         }
                         else 
-                        cc.selectedIndex = parseInt(str);
+                        cc.selectedIndex =Std.parseInt(str);
                     }
                 }
             

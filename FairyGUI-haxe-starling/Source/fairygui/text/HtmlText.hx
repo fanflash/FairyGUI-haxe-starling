@@ -61,7 +61,7 @@ class HtmlText
                     tf.size = Int(attr.get(0));
                 attr = node.node.attribute.innerData("color");
                 if (attr.length()) 
-                    tf.color = parseInt(attr.get(0).node.substr.innerData(1), 16);
+                    tf.color = Std.parseInt(attr.get(0).node.substr.innerData(1), 16);
                 attr = node.node.attribute.innerData("italic");
                 if (attr.length()) 
                     tf.italic = attr.get(0) == "true";

@@ -155,7 +155,7 @@ class GearBase
 
         str = xml.att.resolve("duration");
         if (str != null)
-            _tweenTime = parseFloat(str);
+            _tweenTime = Std.parseFloat(str);
 
         str = xml.att.resolve("values");
         var values : Array<Dynamic>;

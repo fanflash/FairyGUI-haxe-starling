@@ -921,7 +921,7 @@ class GList extends GComponent
             scrollBarDisplay = ScrollBarDisplayType.parse(str)
         else 
         scrollBarDisplay = ScrollBarDisplayType.Default;
-        var scrollBarFlags : Int = parseInt(xml.att.scrollBarFlags);
+        var scrollBarFlags : Int = Std.parseInt(xml.att.scrollBarFlags);
         
         var scrollBarMargin : Margin;
         if (overflow == OverflowType.Scroll) 

@@ -28,8 +28,6 @@ import openfl.geom.Point;
 import openfl.geom.Rectangle;
 import openfl.text.TextField;
 import openfl.text.TextFieldType;
-import openfl.ui.Mouse;
-
 
 import fairygui.event.DragEvent;
 import fairygui.event.GTouchEvent;
@@ -722,14 +720,19 @@ class GObject extends EventDispatcher
     
     private function set_tooltips(value : String) : String
     {
-        if (_tooltips != null && Mouse.supportsCursor) 
+#if flash
+        var supportsCursor:Bool = flash.ui.Mouse.supportsCursor;
+#else
+        var supportsCursor:Bool = false;
+#end
+        if (_tooltips != null && supportsCursor)
         {
             this.removeEventListener(GTouchEvent.ROLL_OVER, __rollOver);
             this.removeEventListener(GTouchEvent.ROLL_OUT, __rollOut);
         }
         
         _tooltips = value;
-        if (_tooltips != null && Mouse.supportsCursor)
+        if (_tooltips != null && supportsCursor)
         {
             this.addEventListener(GTouchEvent.ROLL_OVER, __rollOver);
             this.addEventListener(GTouchEvent.ROLL_OUT, __rollOut);
@@ -1215,7 +1218,7 @@ class GObject extends EventDispatcher
         
         str = xml.att.rotation;
         if (str != null) 
-            this.rotation = parseInt(str);
+            this.rotation = Std.parseInt(str);
         
         str = xml.att.alpha;
         if (str != null) 

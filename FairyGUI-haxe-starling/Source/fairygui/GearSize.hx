@@ -1,13 +1,14 @@
 package fairygui;
 
-import com.greensock.TweenLite;	
+import com.greensock.TweenLite;
+import motion.Actuate;
 
 class GearSize extends GearBase
 {
 	private var _storage:Dynamic;
 	private var _default:GearSizeValue;
 	private var _tweenValue:GearSizeValue;
-	private var _tweener:TweenLite;
+	private var _tweener:Actuate;
 	
 	public function new(owner:GObject)
 	{
@@ -31,12 +32,12 @@ class GearSize extends GearBase
 			gv=new GearSizeValue();
 			_storage[pageId]=gv;
 		}
-		gv.width=parseInt(arr[0]);
-		gv.height=parseInt(arr[1]);
+		gv.width=Std.parseInt(arr[0]);
+		gv.height=Std.parseInt(arr[1]);
 		if(arr.length>2)
 		{
-			gv.scaleX=parseFloat(arr[2]);
-			gv.scaleY=parseFloat(arr[3]);
+			gv.scaleX=Std.parseFloat(arr[2]);
+			gv.scaleY=Std.parseFloat(arr[3]);
 		}
 	}
 	
@@ -92,7 +93,7 @@ class GearSize extends GearBase
 				_tweenValue.height=_owner.height;
 				_tweenValue.scaleX=_owner.scaleX;
 				_tweenValue.scaleY=_owner.scaleY;
-				_tweener=TweenLite.to(_tweenValue, _tweenTime, vars);
+				_tweener=Actuate.tween(_tweenValue, _tweenTime, vars);
 			}
 		}
 		else

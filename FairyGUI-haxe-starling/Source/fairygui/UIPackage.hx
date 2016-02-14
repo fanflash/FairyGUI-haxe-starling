@@ -777,7 +777,7 @@ class UIPackage
             item.swing = str == "true";
         str = xml.att.repeatDelay;
         if (str != null) 
-            item.repeatDelay = parseInt(str);
+            item.repeatDelay = Std.parseInt(str);
         
         var atlasItem : PackageItem;
         
@@ -789,9 +789,9 @@ class UIPackage
             var frameNode : Fast = frameNodes.get(i);
             str = frameNode.att.rect;
             arr = str.split(sep0);
-            frame.rect = new Rectangle(parseInt(arr[0]), parseInt(arr[1]), parseInt(arr[2]), parseInt(arr[3]));
+            frame.rect = new Rectangle(Std.parseInt(arr[0]), Std.parseInt(arr[1]), Std.parseInt(arr[2]), Std.parseInt(arr[3]));
             str = frameNode.att.addDelay;
-            frame.addDelay = parseInt(str);
+            frame.addDelay = Std.parseInt(str);
             item.frames[i] = frame;
             
             var sprite : AtlasSprite = _sprites[item.id + "_" + i];

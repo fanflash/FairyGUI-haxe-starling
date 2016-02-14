@@ -334,12 +334,12 @@ class Controller extends EventDispatcher
                 pt.transitionName = str.substr(k + 1);
                 str = str.substring(0, k);
                 k = str.indexOf("-");
-                pt.toIndex = parseInt(str.substring(k + 1));
+                pt.toIndex = Std.parseInt(str.substring(k + 1));
                 str = str.substring(0, k);
                 if (str == "*") 
                     pt.fromIndex = -1
                 else 
-                pt.fromIndex = parseInt(str);
+                pt.fromIndex = Std.parseInt(str);
                 _pageTransitions.push(pt);
             }
         }

@@ -110,11 +110,11 @@ class ToolSet
             str = str.substr(1);
         
         if (str.length == 8) 
-            return (parseInt(str.substr(0, 2), 16) << 24) + parseInt(str.substr(2), 16)
+            return (Std.parseInt(str.substr(0, 2), 16) << 24) + Std.parseInt(str.substr(2), 16)
         else if (hasAlpha) 
-            return 0xFF000000 + parseInt(str, 16)
+            return 0xFF000000 + Std.parseInt(str, 16)
         else 
-        return parseInt(str, 16);
+        return Std.parseInt(str, 16);
     }
     
     public static function encodeHTML(str : String) : String{

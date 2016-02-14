@@ -919,7 +919,7 @@ class GTextField extends GObject implements IColorGear
         
         str = xml.att.fontSize;
         if (str != null) 
-            _fontSize = parseInt(str);
+            _fontSize = Std.parseInt(str);
         
         str = xml.att.color;
         if (str != null) 

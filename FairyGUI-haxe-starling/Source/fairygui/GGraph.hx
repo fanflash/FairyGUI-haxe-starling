@@ -151,7 +151,7 @@ class GGraph extends GObject
             var lineSize : Int = 1;
             str = xml.att.lineSize;
             if (str != null) 
-                lineSize = parseInt(str);
+                lineSize = Std.parseInt(str);
             
             var lineColor : Int = 0;
             var lineAlpha : Float = 1;
